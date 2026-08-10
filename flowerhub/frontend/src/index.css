@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .btn-primary {
+    @apply h-[48px] px-6 rounded-[12px] bg-[#ff69b4] hover:bg-[#ff4da6] text-white font-bold text-sm transition-all duration-300 shadow-md active:scale-95 flex items-center justify-center space-x-2 hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .btn-whatsapp {
+    @apply h-[48px] px-6 rounded-[12px] bg-[#25d366] hover:bg-[#1ebd57] text-white font-bold text-sm transition-all duration-300 shadow-md active:scale-95 flex items-center justify-center space-x-2 hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply h-[48px] px-6 rounded-[12px] bg-[#667eea] hover:bg-[#5466c3] text-white font-bold text-sm transition-all duration-300 shadow-md active:scale-95 flex items-center justify-center space-x-2 hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .service-pill {
+    @apply px-3 py-1 bg-slate-100 text-[#ff69b4] font-semibold text-xs rounded-full border border-pink-100;
+  }
+
+  .filter-pill {
+    @apply px-4 py-2 rounded-full text-xs font-bold transition-all duration-200 bg-slate-100 text-slate-600 hover:border-[#ff69b4] border border-transparent;
+  }
+
+  .filter-pill-active {
+    @apply bg-[#ff69b4] text-white font-bold border-transparent shadow-md scale-105;
+  }
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333333;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff69b4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4da6;
+}
